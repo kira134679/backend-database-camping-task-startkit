@@ -395,7 +395,7 @@ SELECT
     COALESCE(SUM(cpa.price), 0) 總營收
 FROM "CREDIT_PURCHASE" cpu
 LEFT JOIN "CREDIT_PACKAGE" cpa ON cpu.credit_package_id = cpa.id
-WHERE purchase_at BETWEEN '2024-11-01 00:00:00' AND '2024-11-30 23:59:59'
+WHERE purchase_at BETWEEN '2024-11-01 00:00:00' AND '2024-11-30 23:59:59';
 
 -- 6-5. 查詢：計算 11 月份有預約課程的會員人數（需使用 Distinct，並用 created_at 和 status 欄位統計）
 -- 顯示須包含以下欄位： 預約會員人數
